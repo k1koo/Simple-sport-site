@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Football fans only</title>
+<script src="js/main.js"></script>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<!-- Start fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Risque" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Courgette|Kaushan+Script" rel="stylesheet">
+<!-- End fonts -->
+
+<!-- START BOOTSTRAP -->
+	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+	<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<!-- END BOOTSTRAP -->
+<style>
+	.head-image{
+		background-image: url("imgs/stadium.jpg");
+	}
+	#game{
+		background-image: url("imgs/ground.jpg");
+	}
+</style>
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row nav navbar-fixed-top">
+			<span class="logo-text col-sm-8 col-xs-12">Football fan page<img src="imgs/ball.gif"></span>
+			<span class="nav-text col-sm-2 col-xs-12"><a href="#contacts">Contacts</a></span>
+			<span class="nav-text col-sm-1 col-xs-12"><a href="#">About</a></span>			
+			<span class="nav-text col-sm-1 col-xs-12"><a href="#game">Game</a></span>
+		</div>
+		<div class="row head-image">
+		</div>
+		<div class="row leagues"> 
+				<h3 class="text-center h3-text">Choose your favorite league</h3>
+			<div class="col-sm-4">
+				<img class="pic" src="imgs/premier.png">
+				<p class="text-center text-pic">Premier League</p>
+			</div>
+			<div class="col-sm-4">
+				<img class="pic" src="imgs/bundesliga.png">
+				<p class="text-center text-pic">Bundesliga</p>
+			</div>
+			<div class="col-sm-4">
+				<img class="pic" src="imgs/SerieA.jpg">
+				<p class="text-center text-pic">Serie A</p>
+			</div>
+			<div class="col-sm-4">
+				<img class="pic" src="imgs/Primera_Division_Logo.png">
+				<p class="text-center text-pic">Primera Division</p>
+			</div>
+			<div class="col-sm-4">
+				<img class="pic" src="imgs/Ligue1.png">
+				<p class="text-center text-pic">Ligue 1</p>
+			</div>
+			<div class="col-sm-4">
+				<img class="pic" src="imgs/ball.jpg">
+				<p class="text-center text-pic">Others</p>
+			</div>
+		</div>
+		<hr>
+		<div class="row" id="game">
+			<h3 class="text-center h3-game">This is a noobie game for football masters <img src="imgs/ball.gif"></h3>
+			
+			<form id="quiz" name="quiz" class="col-md-4 col-md-offset-1 col-xs-6">
+				
+				<p><strong>Which team won Euro 2004 in Portugal?</strong></p>
+				<input type="text" id="textbox" name="question1" placeholder="It's Brazil! Isn't it?!">
+				<br><br>
+				<p><strong>How many times Liverpool has won Champions league?</strong></p>
+				<input type="radio" id="mc" name="question2" value="3">3<br>
+				<input type="radio" id="mc" name="question2" value="4">4<br>
+				<input type="radio" id="mc" name="question2" value="5">5
+				<br><br>
+				<p><strong>Which team has won 12 times Champions league?</strong></p>
+				<input type="radio" id="mc" name="question3" value="real">Real Madrid<br>
+				<input type="radio" id="mc" name="question3" value="barca">Barcelona<br>
+				<input type="radio" id="mc" name="question3" value="milan">Milan
+				<br>
+				<input id="button" class="btn btn-primary" type="button" value="Check your result!" onclick="check();">
+			
+			</form>
+			
+			<div id="after_submit" class="col-xs-6">
+			<p id="message"></p>
+			<p id="number_correct"></p>
+			<img id="picture">
+			</div>
+		</div>
+		<div class="row text-center" id="contacts">		
+			<h4>Contact us:</h4>
+			<p>Tel: +359 / 883 31 46 57</p>
+			<p>Email: kiril.haralanov@abv.bg</p>
+			<p>Copyright &copy; K2h </p>
+		</div>
+	</div>
+				
+</body>
+</html>
